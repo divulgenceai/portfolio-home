@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Home</title>
+    <meta
+      name="description"
+      content="A small launchpad for ATAR Dash, Prayer Times, and Aesthetic Chess."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" aria-label="Portfolio header">
+        <a class="brand" href="#page-title" aria-label="Portfolio Home">
+          <span class="brand-mark" aria-hidden="true">Z</span>
+          <span>Portfolio Home</span>
+        </a>
+        <nav class="site-nav" aria-label="Project links">
+          <a href="https://atar-runner.vercel.app" target="_blank" rel="noreferrer">ATAR Dash</a>
+          <a href="https://prayer-times-one-tau.vercel.app" target="_blank" rel="noreferrer">Prayer Times</a>
+          <a href="https://aesthetic-chess-chi.vercel.app" target="_blank" rel="noreferrer">Chess</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-copy">
+            <h1 id="page-title">My collection of current projects</h1>
+            <p>
+              Things I'm building, breaking, and improving.
+              <span>Click around.</span>
+            </p>
+          </div>
+        </section>
+
+        <section class="projects" aria-label="Projects">
+          <a
+            class="project-card project-card-featured"
+            href="https://atar-runner.vercel.app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="project-image">
+              <img
+                src="assets/projects/atar-dash.png"
+                alt="Screenshot of the ATAR Dash app"
+              />
+            </span>
+            <span class="project-content">
+              <span class="project-number">01</span>
+              <span>
+                <span class="project-title">ATAR Dash</span>
+                <span class="project-description">
+                  A study runner that turns assessment marks into a game loop.
+                </span>
+              </span>
+              <span class="project-action" aria-hidden="true">
+                Open
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </span>
+            </span>
+          </a>
+
+          <a
+            class="project-card"
+            href="https://prayer-times-one-tau.vercel.app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="project-image">
+              <img
+                src="assets/projects/prayer-times.png"
+                alt="Screenshot of the Prayer Times app"
+              />
+            </span>
+            <span class="project-content">
+              <span class="project-number">02</span>
+              <span>
+                <span class="project-title">Prayer Times</span>
+                <span class="project-description">
+                  A calm Sydney prayer dashboard with daily times and calendar.
+                </span>
+              </span>
+              <span class="project-action" aria-hidden="true">
+                Open
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </span>
+            </span>
+          </a>
+
+          <a
+            class="project-card"
+            href="https://aesthetic-chess-chi.vercel.app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="project-image">
+              <img
+                src="assets/projects/aesthetic-chess.png"
+                alt="Screenshot of the Aesthetic Chess app"
+              />
+            </span>
+            <span class="project-content">
+              <span class="project-number">03</span>
+              <span>
+                <span class="project-title">Aesthetic Chess</span>
+                <span class="project-description">
+                  A moody chess board focused on smooth play and visual polish.
+                </span>
+              </span>
+              <span class="project-action" aria-hidden="true">
+                Open
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </section>
+      </main>
+      <footer class="site-footer" aria-label="Footer">
+        <span aria-hidden="true"></span>
+        <p>Made with HTML, CSS, and a bit of curiosity.</p>
+        <span aria-hidden="true"></span>
+      </footer>
+    </div>
+  </body>
+</html>
