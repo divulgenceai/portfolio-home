@@ -54,7 +54,7 @@ a {
 
 .page-shell {
   position: relative;
-  width: min(1160px, calc(100% - 36px));
+  width: min(1180px, calc(100% - 36px));
   margin: 0 auto;
   padding: 26px 0 34px;
 }
@@ -137,7 +137,7 @@ a {
 .hero::before {
   top: 30px;
   right: 0;
-  content: "/ three things online";
+  content: "/ four things online";
   transform: rotate(2deg);
 }
 
@@ -178,8 +178,8 @@ a {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 28px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 34px;
   align-items: start;
   padding-top: 6px;
 }
@@ -204,13 +204,18 @@ a {
 }
 
 .project-card:nth-child(2) {
-  margin-top: 26px;
+  margin-top: 22px;
   transform: rotate(0.8deg);
 }
 
 .project-card:nth-child(3) {
-  margin-top: 4px;
-  transform: rotate(-0.5deg);
+  margin-top: -2px;
+  transform: rotate(0.6deg);
+}
+
+.project-card:nth-child(4) {
+  margin-top: 28px;
+  transform: rotate(-0.7deg);
 }
 
 .project-card::before {
@@ -229,6 +234,12 @@ a {
   font-weight: 700;
 }
 
+.project-card-game::before {
+  color: #05080c;
+  background: #60dda3;
+  content: "game";
+}
+
 .project-card:hover,
 .project-card:focus-visible {
   border-color: var(--blue);
@@ -241,13 +252,15 @@ a {
 .project-card:nth-child(2):hover,
 .project-card:nth-child(2):focus-visible,
 .project-card:nth-child(3):hover,
-.project-card:nth-child(3):focus-visible {
+.project-card:nth-child(3):focus-visible,
+.project-card:nth-child(4):hover,
+.project-card:nth-child(4):focus-visible {
   transform: translate(-2px, -4px) rotate(0deg);
 }
 
 .project-image {
   display: block;
-  aspect-ratio: 16 / 10.5;
+  aspect-ratio: 16 / 9.6;
   overflow: hidden;
   border-bottom: 2px solid var(--line);
   background: #020507;
@@ -382,7 +395,8 @@ a {
 
   .project-card:nth-child(1),
   .project-card:nth-child(2),
-  .project-card:nth-child(3) {
+  .project-card:nth-child(3),
+  .project-card:nth-child(4) {
     margin-top: 0;
     transform: rotate(0deg);
   }

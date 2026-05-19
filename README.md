@@ -3,6 +3,7 @@
 A small static homepage for my current projects:
 
 - ATAR Dash
+- ATAR Shooter
 - Prayer Times
 - Aesthetic Chess
 
