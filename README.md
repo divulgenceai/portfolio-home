@@ -4,6 +4,7 @@ A small static homepage for my current projects:
 
 - ATAR Dash
 - ATAR Shooter
+- GIF Maker
 - Prayer Times
 - Aesthetic Chess
 

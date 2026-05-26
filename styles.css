@@ -137,7 +137,7 @@ a {
 .hero::before {
   top: 30px;
   right: 0;
-  content: "/ four things online";
+  content: "/ five things online";
   transform: rotate(2deg);
 }
 
@@ -209,6 +209,7 @@ a {
 }
 
 .project-card:nth-child(3) {
+  grid-column: 1 / -1;
   margin-top: -2px;
   transform: rotate(0.6deg);
 }
@@ -216,6 +217,11 @@ a {
 .project-card:nth-child(4) {
   margin-top: 28px;
   transform: rotate(-0.7deg);
+}
+
+.project-card:nth-child(5) {
+  margin-top: -8px;
+  transform: rotate(0.7deg);
 }
 
 .project-card::before {
@@ -240,6 +246,12 @@ a {
   content: "game";
 }
 
+.project-card-tool::before {
+  color: #05080c;
+  background: #ffc861;
+  content: "tool";
+}
+
 .project-card:hover,
 .project-card:focus-visible {
   border-color: var(--blue);
@@ -254,7 +266,9 @@ a {
 .project-card:nth-child(3):hover,
 .project-card:nth-child(3):focus-visible,
 .project-card:nth-child(4):hover,
-.project-card:nth-child(4):focus-visible {
+.project-card:nth-child(4):focus-visible,
+.project-card:nth-child(5):hover,
+.project-card:nth-child(5):focus-visible {
   transform: translate(-2px, -4px) rotate(0deg);
 }
 
@@ -272,6 +286,22 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: top center;
+}
+
+.project-card-tool {
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+}
+
+.project-card-tool .project-image {
+  aspect-ratio: auto;
+  min-height: 360px;
+  border-right: 2px solid var(--line);
+  border-bottom: 0;
+}
+
+.project-card-tool .project-content {
+  align-content: center;
+  min-height: 360px;
 }
 
 .project-content {
@@ -396,9 +426,26 @@ a {
   .project-card:nth-child(1),
   .project-card:nth-child(2),
   .project-card:nth-child(3),
-  .project-card:nth-child(4) {
+  .project-card:nth-child(4),
+  .project-card:nth-child(5) {
+    grid-column: auto;
     margin-top: 0;
     transform: rotate(0deg);
+  }
+
+  .project-card-tool {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card-tool .project-image {
+    aspect-ratio: 16 / 9.6;
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 2px solid var(--line);
+  }
+
+  .project-card-tool .project-content {
+    min-height: 210px;
   }
 }
 
