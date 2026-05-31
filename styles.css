@@ -22,6 +22,7 @@ html {
 body {
   min-height: 100vh;
   margin: 0;
+  overflow-x: hidden;
   color: var(--ink);
   font-family:
     "Work Sans",
@@ -96,6 +97,7 @@ a {
   flex-wrap: wrap;
   gap: 8px;
   justify-content: flex-end;
+  max-width: 620px;
 }
 
 .site-nav a {
@@ -396,20 +398,39 @@ a {
 
 @media (max-width: 930px) {
   .page-shell {
-    width: min(100% - 28px, 690px);
+    width: min(100% - 24px, 690px);
+    padding-top: 18px;
   }
 
   .site-header {
-    align-items: flex-start;
+    align-items: stretch;
     flex-direction: column;
+    gap: 14px;
   }
 
   .site-nav {
+    flex-wrap: nowrap;
     justify-content: flex-start;
+    max-width: none;
+    width: 100%;
+    padding: 2px 0 8px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-nav a {
+    flex: 0 0 auto;
+    white-space: nowrap;
   }
 
   .hero {
-    padding-top: 58px;
+    padding: 44px 0 24px;
   }
 
   .hero::before {
@@ -420,7 +441,7 @@ a {
 
   .projects {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 18px;
   }
 
   .project-card:nth-child(1),
@@ -445,7 +466,7 @@ a {
   }
 
   .project-card-tool .project-content {
-    min-height: 210px;
+    min-height: 0;
   }
 }
 
@@ -455,39 +476,99 @@ a {
   }
 
   .page-shell {
-    width: min(100% - 22px, 420px);
-    padding-top: 20px;
+    width: min(100% - 16px, 430px);
+    padding-top: 16px;
   }
 
-  .site-nav {
-    width: 100%;
+  .brand {
+    gap: 10px;
+    font-size: 0.92rem;
+  }
+
+  .brand-mark {
+    width: 34px;
+    height: 34px;
+    box-shadow: 3px 3px 0 #16394b;
   }
 
   .site-nav a {
-    flex: 1 1 100%;
-    text-align: center;
+    padding: 8px 12px;
+    font-size: 0.72rem;
   }
 
   .hero {
-    padding: 52px 0 32px;
+    padding: 34px 0 22px;
   }
 
   .hero::before {
+    position: static;
+    display: block;
+    margin-bottom: 14px;
     font-size: 0.8rem;
+    transform: none;
+  }
+
+  .hero::after {
+    bottom: 8px;
+    width: 140px;
   }
 
   .hero h1 {
-    font-size: 3.05rem;
+    font-size: clamp(2.45rem, 14vw, 3.25rem);
+    line-height: 0.98;
+  }
+
+  .hero p {
+    margin-top: 18px;
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
+  .project-card {
+    border-width: 1px;
+    border-radius: 6px;
+    box-shadow: 6px 6px 0 #07141b;
+  }
+
+  .project-card::before {
+    top: 9px;
+    left: 9px;
+    padding: 3px 7px;
+    font-size: 0.64rem;
+  }
+
+  .project-image,
+  .project-card-tool .project-image {
+    aspect-ratio: 16 / 8.7;
   }
 
   .project-content {
     grid-template-columns: 1fr;
+    gap: 12px;
     min-height: 0;
+    padding: 16px;
+  }
+
+  .project-number {
+    width: 36px;
+    height: 36px;
+    font-size: 0.72rem;
+  }
+
+  .project-title {
+    font-size: 1.32rem;
+  }
+
+  .project-description {
+    margin-top: 7px;
+    font-size: 0.9rem;
+    line-height: 1.42;
   }
 
   .project-action {
     grid-column: 1;
-    margin-top: 8px;
+    margin-top: 2px;
+    font-size: 0.86rem;
   }
 
   .site-footer {
