@@ -6,6 +6,7 @@ A small static homepage for my current projects:
 - ATAR Shooter
 - GIF Maker
 - Prayer Times
+- Daily Deen
 - Aesthetic Chess
 
 ## Deploying on Vercel
