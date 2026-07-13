@@ -7,6 +7,7 @@ A small static homepage for my current projects:
 - GIF Maker
 - Prayer Times
 - Daily Deen
+- Dhikr Counter
 - Aesthetic Chess
 - Sydney Course Finder
 - Basic Simple Objects
