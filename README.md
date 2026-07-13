@@ -10,6 +10,8 @@ A small static homepage for my current projects:
 - Aesthetic Chess
 - Sydney Course Finder
 - Basic Simple Objects
+- Pulse Dash
+- Audio Stem Editor
 
 ## Deploying on Vercel
 
