@@ -139,7 +139,7 @@ a {
 .hero::before {
   top: 30px;
   right: 0;
-  content: "/ seven things online";
+  content: "/ eight things online";
   transform: rotate(2deg);
 }
 
@@ -231,9 +231,13 @@ a {
 }
 
 .project-card:nth-child(7) {
-  grid-column: 1 / -1;
-  margin-top: 4px;
+  margin-top: 0;
   transform: rotate(0.5deg);
+}
+
+.project-card:nth-child(8) {
+  margin-top: 24px;
+  transform: rotate(-0.8deg);
 }
 
 .project-card::before {
@@ -276,6 +280,12 @@ a {
   content: "finder";
 }
 
+.project-card-objects::before {
+  color: #05080c;
+  background: #d6c5ff;
+  content: "object";
+}
+
 .project-card:hover,
 .project-card:focus-visible {
   border-color: var(--blue);
@@ -296,7 +306,9 @@ a {
 .project-card:nth-child(6):hover,
 .project-card:nth-child(6):focus-visible,
 .project-card:nth-child(7):hover,
-.project-card:nth-child(7):focus-visible {
+.project-card:nth-child(7):focus-visible,
+.project-card:nth-child(8):hover,
+.project-card:nth-child(8):focus-visible {
   transform: translate(-2px, -4px) rotate(0deg);
 }
 
@@ -314,22 +326,6 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: top center;
-}
-
-.project-card-course {
-  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
-}
-
-.project-card-course .project-image {
-  aspect-ratio: auto;
-  min-height: 340px;
-  border-right: 2px solid var(--line);
-  border-bottom: 0;
-}
-
-.project-card-course .project-content {
-  align-content: center;
-  min-height: 340px;
 }
 
 .project-content {
@@ -476,25 +472,11 @@ a {
   .project-card:nth-child(4),
   .project-card:nth-child(5),
   .project-card:nth-child(6),
-  .project-card:nth-child(7) {
+  .project-card:nth-child(7),
+  .project-card:nth-child(8) {
     grid-column: auto;
     margin-top: 0;
     transform: rotate(0deg);
-  }
-
-  .project-card-course {
-    grid-template-columns: 1fr;
-  }
-
-  .project-card-course .project-image {
-    aspect-ratio: 16 / 9.6;
-    min-height: 0;
-    border-right: 0;
-    border-bottom: 2px solid var(--line);
-  }
-
-  .project-card-course .project-content {
-    min-height: 0;
   }
 }
 

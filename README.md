@@ -9,6 +9,7 @@ A small static homepage for my current projects:
 - Daily Deen
 - Aesthetic Chess
 - Sydney Course Finder
+- Basic Simple Objects
 
 ## Deploying on Vercel
 
