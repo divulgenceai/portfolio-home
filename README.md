@@ -8,6 +8,7 @@ A small static homepage for my current projects:
 - Prayer Times
 - Daily Deen
 - Aesthetic Chess
+- Sydney Course Finder
 
 ## Deploying on Vercel
 
