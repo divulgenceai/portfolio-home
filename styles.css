@@ -280,6 +280,12 @@ a {
   content: "finder";
 }
 
+.project-card-academic::before {
+  color: #05080c;
+  background: #a9c7ff;
+  content: "academic";
+}
+
 .project-card-objects::before {
   color: #05080c;
   background: #d6c5ff;
