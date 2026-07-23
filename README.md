@@ -12,6 +12,7 @@ A small static homepage for my current projects:
 - Sydney Course Finder
 - Basic Simple Objects
 - Pulse Dash
+- File Converter
 
 ## Deploying on Vercel
 

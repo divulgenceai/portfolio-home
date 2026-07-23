@@ -139,7 +139,7 @@ a {
 .hero::before {
   top: 30px;
   right: 0;
-  content: "/ ten things online";
+  content: "/ eleven things online";
   transform: rotate(2deg);
 }
 
@@ -250,6 +250,11 @@ a {
   transform: rotate(0.7deg);
 }
 
+.project-card:nth-child(11) {
+  margin-top: 0;
+  transform: rotate(-0.6deg);
+}
+
 .project-card::before {
   position: absolute;
   z-index: 2;
@@ -328,7 +333,9 @@ a {
 .project-card:nth-child(9):hover,
 .project-card:nth-child(9):focus-visible,
 .project-card:nth-child(10):hover,
-.project-card:nth-child(10):focus-visible {
+.project-card:nth-child(10):focus-visible,
+.project-card:nth-child(11):hover,
+.project-card:nth-child(11):focus-visible {
   transform: translate(-2px, -4px) rotate(0deg);
 }
 
@@ -495,7 +502,8 @@ a {
   .project-card:nth-child(7),
   .project-card:nth-child(8),
   .project-card:nth-child(9),
-  .project-card:nth-child(10) {
+  .project-card:nth-child(10),
+  .project-card:nth-child(11) {
     grid-column: auto;
     margin-top: 0;
     transform: rotate(0deg);
