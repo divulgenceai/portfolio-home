@@ -13,6 +13,7 @@ A small static homepage for my current projects:
 - Basic Simple Objects
 - Pulse Dash
 - File Converter
+- Daily Matter
 
 ## Deploying on Vercel
 

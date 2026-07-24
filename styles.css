@@ -139,7 +139,7 @@ a {
 .hero::before {
   top: 30px;
   right: 0;
-  content: "/ eleven things online";
+  content: "/ twelve things online";
   transform: rotate(2deg);
 }
 
@@ -255,6 +255,11 @@ a {
   transform: rotate(-0.6deg);
 }
 
+.project-card:nth-child(12) {
+  margin-top: 24px;
+  transform: rotate(0.8deg);
+}
+
 .project-card::before {
   position: absolute;
   z-index: 2;
@@ -287,6 +292,12 @@ a {
   color: #05080c;
   background: #67ef9d;
   content: "deen";
+}
+
+.project-card-daily::before {
+  color: #05080c;
+  background: #ff927a;
+  content: "daily";
 }
 
 .project-card-course::before {
@@ -335,7 +346,9 @@ a {
 .project-card:nth-child(10):hover,
 .project-card:nth-child(10):focus-visible,
 .project-card:nth-child(11):hover,
-.project-card:nth-child(11):focus-visible {
+.project-card:nth-child(11):focus-visible,
+.project-card:nth-child(12):hover,
+.project-card:nth-child(12):focus-visible {
   transform: translate(-2px, -4px) rotate(0deg);
 }
 
@@ -503,7 +516,8 @@ a {
   .project-card:nth-child(8),
   .project-card:nth-child(9),
   .project-card:nth-child(10),
-  .project-card:nth-child(11) {
+  .project-card:nth-child(11),
+  .project-card:nth-child(12) {
     grid-column: auto;
     margin-top: 0;
     transform: rotate(0deg);
