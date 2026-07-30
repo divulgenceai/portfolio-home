@@ -139,7 +139,7 @@ a {
 .hero::before {
   top: 30px;
   right: 0;
-  content: "/ twelve things online";
+  content: "/ thirteen things online";
   transform: rotate(2deg);
 }
 
@@ -260,6 +260,11 @@ a {
   transform: rotate(0.8deg);
 }
 
+.project-card:nth-child(13) {
+  margin-top: 0;
+  transform: rotate(-0.5deg);
+}
+
 .project-card::before {
   position: absolute;
   z-index: 2;
@@ -348,7 +353,9 @@ a {
 .project-card:nth-child(11):hover,
 .project-card:nth-child(11):focus-visible,
 .project-card:nth-child(12):hover,
-.project-card:nth-child(12):focus-visible {
+.project-card:nth-child(12):focus-visible,
+.project-card:nth-child(13):hover,
+.project-card:nth-child(13):focus-visible {
   transform: translate(-2px, -4px) rotate(0deg);
 }
 
@@ -366,6 +373,20 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: top center;
+}
+
+.project-card-daily .project-image {
+  display: grid;
+  place-items: center;
+  background: #f8f2e7;
+}
+
+.project-card-daily .project-image img {
+  width: clamp(112px, 30%, 168px);
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  filter: drop-shadow(6px 7px 0 rgba(5, 8, 12, 0.14));
 }
 
 .project-content {
@@ -517,7 +538,8 @@ a {
   .project-card:nth-child(9),
   .project-card:nth-child(10),
   .project-card:nth-child(11),
-  .project-card:nth-child(12) {
+  .project-card:nth-child(12),
+  .project-card:nth-child(13) {
     grid-column: auto;
     margin-top: 0;
     transform: rotate(0deg);

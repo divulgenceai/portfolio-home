@@ -14,6 +14,7 @@ A small static homepage for my current projects:
 - Pulse Dash
 - File Converter
 - Daily Matter
+- AI Job
 
 ## Deploying on Vercel
 
