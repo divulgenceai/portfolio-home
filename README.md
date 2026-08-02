@@ -15,6 +15,7 @@ A small static homepage for my current projects:
 - File Converter
 - Daily Matter
 - AI Job
+- Riftlock: Exclusion
 
 ## Deploying on Vercel
 
